@@ -8,114 +8,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> <!-- Noto Sans font link here -->
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    font-family: 'Google Sans', sans-serif;
-}
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5em; /* Further reduce the font size for the header */
+  }
 
+  .conference-title {
+    font-size: 2.5em; /* Further reduce the font size for the conference title */
+  }
 
-.header h1:first-child { /* 只針對第一個 <h1> 元素 */
-    font-size: 4em; /* 增加字體大小 */
-    font-weight: bold; /* 加粗 */
-    margin-bottom: 0; /* 減少到下一個元素的距離 */
-    letter-spacing: -2px; /* 稍微減少字母間距，視覺上更加緊密 */
-}
+  .authors {
+    font-size: 1em; /* Further reduce the font size for authors */
+  }
 
-.header {
-    text-align: center; /* Center align the header */ 
-    margin: 0; /* Remove default margins */
-    padding: 10px 0; /* Add some padding for spacing */
-    font-size: 2.2em; /* Increase font size */
-}
-.authors {
-    padding: 0; /* Remove default padding */
-    margin: 20px 0; /* Add some margin for spacing */
-    font-size: 1.7em; /* Increase font size */
-}
-.author-name,
-.author-name:visited { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
-    color: #4682b4;
-    text-decoration: none; /* 移除底线 */
-}
-.author-name:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
-    text-decoration: underline; /* 移除底线 */
-}
-.author-namenone,
-.author-namenone:visited { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
-    color: #4682b4;
-    text-decoration: none; /* 移除底线 */
-}
-.author-namenone:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
-    text-decoration: none; /* 移除底线 */
-}
-.author {
-    display: inline;
-    margin: 0 10px;
-    margin-bottom: 30px; /* 這是標題下方的空間，根據需要調整 */
-}
+  .institute {
+    font-size: 0.7em; /* Further reduce the font size for the institute */
+  }
 
+  .abstract-content,
+  .caption {
+    font-size: 1.2em; /* Larger font size for better readability */
+  }
 
-.institute {
-    margin-top: 15px; /* 這會在機構信息和作者名稱之間增加空間 */
-    font-size: 0.8em; /* 根據需要調整字體大小 */
-    color: #333; /* 文本顏色 */
-    margin-bottom: 40px; /* 這是標題下方的空間，根據需要調整 */
+  .button {
+    padding: 15px 30px; /* Further reduce the padding for buttons */
+    font-size: 1.5em; /* Further reduce the font size for buttons */
+    margin: 10px 10px; /* Reduce the lateral margin for buttons */
+    border-radius: 50px; /* Adjust the border radius for buttons */
+  }
+
+  .bibtex-container {
+    font-size: 1.2em; /* Larger font size for the bibtex container for readability */
+    padding: 10px; /* Adjust the padding */
+  }
+
+  .bibtex-title {
+    font-size: 2em; /* Reduce the font size for the bibtex title */
+  }
+
+  /* Adjustments for images and figures to be more responsive */
+  img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Adjust height automatically */
+  }
+
+  figure {
+    margin: 15px 0; /* Adjust the margin for figures */
+  }
 }
-
-
-.conference-title {
-    text-align: center;
-    font-size: 6em;
-    font-weight: bold;
-    margin-top: 30px; /* 減少或移除這個屬性以減少空間 */
-    margin-bottom: 60px; /* 這是標題下方的空間，根據需要調整 */
-    color: #333;
-}
-
-
-
-.button-list {
-    text-align: center;
-    margin: 20px 0;
-}
-.button {
-    padding: 50px 100px; /* 增加內邊距以進一步增大按鈕 */
-    font-family: 'Noto Sans', sans-serif; 
-    font-size: 40px; /* 增加字體大小為原來的兩倍 */
-    font-weight: bold; /* 字體加粗 */
-    text-transform: uppercase; /* 文本轉為大寫 */
-    letter-spacing: 2px; /* 增加字母間距 */
-    background-color: #4A4A4A; /* 按鈕背景色 */
-    color: white; /* 文本顏色 */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 40px; /* 增加邊距以增加按鈕間的距離 */
-    border: none;
-    border-radius: 100px; /* 增加圓角 */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* 增加陰影以獲得更深的效果 */
-    transition: background-color 0.3s, box-shadow 0.3s; /* 增加過渡效果 */
-    cursor: pointer; /* 鼠標懸停時的指針形狀 */
-}
-
-.button:hover {
-    background-color: #575757; /* 鼠標懸停時的背景色 */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* 鼠標懸停時的陰影 */
-}
-
-
-
-
-/* 字符和符號的顏色可能需要調整以適應背景 */
-.icon {
-    color: #D3D3D3; /* 符號的顏色 */
-    margin-right: 8px; /* 符號和文字之間的間隔 */
-}
- 
 @media screen and (max-width: 768px) {
   .abstract-content {
     font-size: 1.5em; /* Larger font size on smaller screens */
@@ -196,40 +136,40 @@ body {
 
 @media screen and (max-width: 480px) {
   .header h1 {
-    font-size: 1.5em; /* Further reduce the font size for the header */
+    font-size: 1em; /* Further reduce the font size for the header */
   }
 
   .conference-title {
-    font-size: 2.5em; /* Further reduce the font size for the conference title */
+    font-size: 2em; /* Further reduce the font size for the conference title */
   }
 
   .authors {
-    font-size: 1em; /* Further reduce the font size for authors */
+    font-size: 0.5em; /* Further reduce the font size for authors */
   }
 
   .institute {
-    font-size: 0.7em; /* Further reduce the font size for the institute */
+    font-size: 0.2em; /* Further reduce the font size for the institute */
   }
 
   .abstract-content,
   .caption {
-    font-size: 1.2em; /* Larger font size for better readability */
+    font-size: 0.7em; /* Larger font size for better readability */
   }
 
   .button {
-    padding: 15px 30px; /* Further reduce the padding for buttons */
-    font-size: 1.5em; /* Further reduce the font size for buttons */
-    margin: 10px 10px; /* Reduce the lateral margin for buttons */
-    border-radius: 50px; /* Adjust the border radius for buttons */
+    padding: 10px 20px; /* Further reduce the padding for buttons */
+    font-size: 1em; /* Further reduce the font size for buttons */
+    margin: 5px 5px; /* Reduce the lateral margin for buttons */
+    border-radius: 25px; /* Adjust the border radius for buttons */
   }
 
   .bibtex-container {
-    font-size: 1.2em; /* Larger font size for the bibtex container for readability */
-    padding: 10px; /* Adjust the padding */
+    font-size: 0.7em; /* Larger font size for the bibtex container for readability */
+    padding: 5px; /* Adjust the padding */
   }
 
   .bibtex-title {
-    font-size: 2em; /* Reduce the font size for the bibtex title */
+    font-size: 1em; /* Reduce the font size for the bibtex title */
   }
 
   /* Adjustments for images and figures to be more responsive */
@@ -239,7 +179,7 @@ body {
   }
 
   figure {
-    margin: 15px 0; /* Adjust the margin for figures */
+    margin: 7px 0; /* Adjust the margin for figures */
   }
 }
     
