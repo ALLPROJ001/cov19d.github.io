@@ -37,12 +37,13 @@ body {
     font-size: 1.7em; /* Increase font size */
 }
 .author-name,
-.author-name:visited, /* 添加 :visited 来确保访问过的链接也没有底线 */
-.author-name:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
+.author-name:visited { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
     color: #4682b4;
+    text-decoration: none; /* 移除底线 */
+}
+.author-name:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
     text-decoration: underline; /* 移除底线 */
 }
-
 .author {
     display: inline;
     margin: 0 10px;
