@@ -193,59 +193,87 @@ body {
 
 
 
-
 @media screen and (max-width: 768px) {
-    .header h1 {
-        font-size: 2em; /* 缩小标题字体大小 */
-    }
-    .authors, .institute {
-        font-size: 1em; /* 缩小作者和机构字体大小 */
-    }
-    .conference-title {
-        font-size: 3em; /* 缩小会议标题字体大小 */
-    }
-    .button {
-        padding: 20px 50px; /* 缩小按钮的内边距 */
-        font-size: 20px; /* 缩小按钮字体大小 */
-        margin: 0 10px; /* 减少按钮之间的空间 */
-    }
-    .abstract-title, .abstract-content, .caption {
-        font-size: 2em; /* 缩小摘要标题和内容的字体大小 */
-    }
-    .bibtex-container {
-        font-size: 2em; /* 缩小BibTeX容器的字体大小 */
-    }
-    .additional-text {
-        font-size: 2em; /* 缩小额外文本的字体大小 */
-    }
+  .header h1 {
+    font-size: 2em; /* Smaller font size for header */
+    margin-bottom: 10px;
+  }
+
+  .conference-title {
+    font-size: 3em; /* Smaller font size for conference title */
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .authors {
+    font-size: 1.2em; /* Smaller font size for authors */
+  }
+
+  .institute {
+    font-size: 0.8em; /* Smaller font size for institute */
+  }
+
+  .abstract-container,
+  .bibtex-container {
+    max-width: 90%; /* Wider container for better reading */
+  }
+
+  .button {
+    padding: 20px 50px; /* Smaller padding for buttons */
+    font-size: 2em; /* Smaller font size for buttons */
+    margin: 10px 20px; /* Smaller margin for buttons */
+  }
 }
+
 
 @media screen and (max-width: 480px) {
-    .header h1 {
-        font-size: 1.5em; /* 进一步缩小标题字体大小 */
-    }
-    .authors, .institute {
-        font-size: 0.8em; /* 进一步缩小作者和机构字体大小 */
-    }
-    .conference-title {
-        font-size: 2em; /* 进一步缩小会议标题字体大小 */
-    }
-    .button {
-        padding: 10px 25px; /* 进一步缩小按钮的内边距 */
-        font-size: 15px; /* 进一步缩小按钮字体大小 */
-        margin: 0 5px; /* 进一步减少按钮之间的空间 */
-    }
-    .abstract-title, .abstract-content, .caption {
-        font-size: 1.5em; /* 进一步缩小摘要标题和内容的字体大小 */
-    }
-    .bibtex-container {
-        font-size: 1.5em; /* 进一步缩小BibTeX容器的字体大小 */
-    }
-    .additional-text {
-        font-size: 1.5em; /* 进一步缩小额外文本的字体大小 */
-    }
-}
+  .header h1 {
+    font-size: 1.5em; /* Further reduce the font size for the header */
+  }
 
+  .conference-title {
+    font-size: 2.5em; /* Further reduce the font size for the conference title */
+  }
+
+  .authors {
+    font-size: 1em; /* Further reduce the font size for authors */
+  }
+
+  .institute {
+    font-size: 0.7em; /* Further reduce the font size for the institute */
+  }
+
+  .abstract-content,
+  .caption {
+    font-size: 1.2em; /* Larger font size for better readability */
+  }
+
+  .button {
+    padding: 15px 30px; /* Further reduce the padding for buttons */
+    font-size: 1.5em; /* Further reduce the font size for buttons */
+    margin: 10px 10px; /* Reduce the lateral margin for buttons */
+    border-radius: 50px; /* Adjust the border radius for buttons */
+  }
+
+  .bibtex-container {
+    font-size: 1.2em; /* Larger font size for the bibtex container for readability */
+    padding: 10px; /* Adjust the padding */
+  }
+
+  .bibtex-title {
+    font-size: 2em; /* Reduce the font size for the bibtex title */
+  }
+
+  /* Adjustments for images and figures to be more responsive */
+  img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Adjust height automatically */
+  }
+
+  figure {
+    margin: 15px 0; /* Adjust the margin for figures */
+  }
+}
     
 </style>
 </head>
