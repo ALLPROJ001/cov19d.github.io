@@ -26,7 +26,7 @@ body {
 }
 
 .header {
-    text-align: center; /* Center align the header */
+    text-align: center; /* Center align the header */ 
     margin: 0; /* Remove default margins */
     padding: 10px 0; /* Add some padding for spacing */
     font-size: 2.2em; /* Increase font size */
@@ -228,7 +228,7 @@ body {
     Conventional Computed Tomography (CT) imaging recognition faces two significant challenges: (1) There is often considerable variability in the resolution and size of each CT scan, necessitating strict requirements for the input size and adaptability of models. (2) CT-scan contains large number of out-of-distribution (OOD) slices.
     The crucial features may only be present in specific spatial regions and slices of the entire CT scan. How can we effectively figure out where these are located? To deal
     with this, we introduce an enhanced Spatial-Slice Feature Learning (SSFL++) framework specifically designed for CT scan. It aim to filter out a OOD data within whole
-    CT scan, enabling our to select crucial spatial-slice for analysis by reducing 70% redundancy totally. Meanwhile, we proposed Kernel-Density-based slice Sampling (KDS) method to improve the stability when training and inference stage, therefore speeding up the rate of convergence and boosting performance. As a result, the experiments demonstrate the promising performance of our model using a simple EfficientNet-2D (E2D) model, even with only 1% of the training data. The efficacy of our approach has been validated on the COVID-19-CT-DB datasets provided by the DEF-AI-MIA workshop, in conjunction with CVPR 2024.Our source code will be made available.
+    CT scan, enabling our to select crucial spatial-slice for analysis by reducing 70% redundancy totally. Meanwhile, we proposed Kernel-Density-based slice Sampling (KDS) method to improve the stability when training and inference stage, therefore speeding up the rate of convergence and boosting performance. As a result, the experiments demonstrate the promising performance of our model using a simple EfficientNet-2D (E2D) model, even with only 1% of the training data. The efficacy of our approach has been validated on the COVID-19-CT-DB datasets provided by the DEF-AI-MIA workshop, in conjunction with CVPR 2024.
   </div>
 </div>
 
