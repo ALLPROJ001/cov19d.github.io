@@ -37,12 +37,21 @@ body {
     font-size: 1.7em; /* Increase font size */
 }
 .author-name,
-.author-name:visited, /* 添加 :visited 来确保访问过的链接也没有底线 */
-.author-name:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
+.author-name:visited { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
     color: #4682b4;
+    text-decoration: none; /* 移除底线 */
+}
+.author-name:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
     text-decoration: underline; /* 移除底线 */
 }
-
+.author-namenone,
+.author-namenone:visited { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
+    color: #4682b4;
+    text-decoration: none; /* 移除底线 */
+}
+.author-namenone:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
+    text-decoration: none; /* 移除底线 */
+}
 .author {
     display: inline;
     margin: 0 10px;
@@ -54,7 +63,7 @@ body {
     margin-top: 15px; /* 這會在機構信息和作者名稱之間增加空間 */
     font-size: 0.8em; /* 根據需要調整字體大小 */
     color: #333; /* 文本顏色 */
-    margin-bottom: 20px; /* 這是標題下方的空間，根據需要調整 */
+    margin-bottom: 40px; /* 這是標題下方的空間，根據需要調整 */
 }
 
 
@@ -62,7 +71,7 @@ body {
     text-align: center;
     font-size: 6em;
     font-weight: bold;
-    margin-top: -80px; /* 減少或移除這個屬性以減少空間 */
+    margin-top: 30px; /* 減少或移除這個屬性以減少空間 */
     margin-bottom: 60px; /* 這是標題下方的空間，根據需要調整 */
     color: #333;
 }
@@ -279,6 +288,11 @@ body {
   <img src="cov4.jpg" alt="Descriptive text for the image" style="width:40%; height:auto; display: block; margin: auto;">
   <figcaption class="abstract-content" style="margin-top: 40px;">
      CT slices from different views and body parts, as well as the results after processing through the spatial step in our proposed SSFL++, are presented. From left to right, the sequence represents the process of CT imaging, where OOD data tend to concentrate at the beginning and the end. The middle section represents the RoI area. As shown in the figure, SSFL++ performs well under various conditions.
+
+
+
+
+      If you find our work helpful, please consider citing the following:
   </figcaption>
 </figure>
 
@@ -298,10 +312,15 @@ body {
               eprint={2404.01643},
               archivePrefix={arXiv},
               primaryClass={eess.IV}
+
+        @misc{hsu2024simple,
+              title={Simple 2D Convolutional Neural Network-based Approach for COVID-19 Detection}, 
+              author={Chih-Chung Hsu and Chia-Ming Lee and Yang Fan Chiang and Yi-Shiuan Chou and Chih-Yu Jiang and Shen-Chieh Tai and Chi-Han Tsai},
+              year={2024},
+              eprint={2403.11230},
+              archivePrefix={arXiv},
+              primaryClass={eess.IV}
 }
-<div style="height: 70px;"></div> <!-- Adjust the height as needed for more or less space -->
-
-
     </pre>
   </div>
 </div>
