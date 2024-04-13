@@ -35,13 +35,13 @@ body {
     padding: 0; /* Remove default padding */
     margin: 20px 0; /* Add some margin for spacing */
     font-size: 1.7em; /* Increase font size */
-    margin-bottom: 20px; /* 這是標題下方的空間，根據需要調整 */
+    margin-bottom: 40px; /* 這是標題下方的空間，根據需要調整 */
 }
 .author-name,
 .author-name:visited, /* 添加 :visited 来确保访问过的链接也没有底线 */
 .author-name:hover { /* 添加 :hover 来确保鼠标悬停时也没有底线 */
     color: #4682b4;
-    text-decoration: none; /* 移除底线 */
+    text-decoration: underline; /* 移除底线 */
 }
 
 .author {
@@ -299,6 +299,9 @@ body {
               archivePrefix={arXiv},
               primaryClass={eess.IV}
 }
+<!-- Space between images -->
+<div style="height: 40px;"></div> <!-- Adjust the height as needed for more or less space -->
+
 
 <div class="bibtex-section">
   <h2 class="bibtex-title">BibTeX</h2>
